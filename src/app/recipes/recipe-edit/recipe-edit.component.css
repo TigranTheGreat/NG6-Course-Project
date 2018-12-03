@@ -1,0 +1,3 @@
+.btn:nth-child(n+2) { margin-left: 5px; }
+.ingredient-row { margin-top: 10px; }
+.form-control.ng-invalid.ng-touched { border: 1px solid red; }
