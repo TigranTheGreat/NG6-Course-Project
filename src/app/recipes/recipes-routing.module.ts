@@ -9,7 +9,7 @@ import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
 const recipesRoutes: Routes = [
-  { path: 'recipes', component: RecipesComponent,
+  { path: '', component: RecipesComponent,
     children: [
       { path: '', component: RecipeStartComponent },
       { path: 'new', component: RecipeEditComponent, canActivate: [AuthGuard] },
