@@ -6,17 +6,15 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 // import { RecipesModule } from './recipes/recipes.module';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { AuthModule } from './auth/auth.module';
-import { HomeComponent } from './home/home.component';
+
+import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +23,7 @@ import { HomeComponent } from './home/home.component';
     AuthModule,
     // RecipesModule,
     ShoppingListModule,
+    CoreModule,
     AppRoutingModule
   ],
   providers: [],
